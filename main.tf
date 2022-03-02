@@ -67,7 +67,7 @@ resource "kubernetes_namespace" "argo-ns" {
 
 resource "helm_release" "argocd" {
   name       = "msur"
-  chart      = "argo"
+  chart      = "argo/argo-cd"
   repository = "https://argoproj.github.io/argo-helm"
   namespace  = "argocd"
 
